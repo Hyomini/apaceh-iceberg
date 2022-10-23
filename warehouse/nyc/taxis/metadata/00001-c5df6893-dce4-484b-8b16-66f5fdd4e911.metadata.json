@@ -1,0 +1,128 @@
+{
+  "format-version" : 1,
+  "table-uuid" : "6dbbb4b5-bb4a-490f-97f6-f0b9d891d6ab",
+  "location" : "/home/iceberg/warehouse/nyc/taxis",
+  "last-updated-ms" : 1666516962087,
+  "last-column-id" : 5,
+  "schema" : {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "vendor_id",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 2,
+      "name" : "trip_id",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 3,
+      "name" : "trip_distance",
+      "required" : false,
+      "type" : "float"
+    }, {
+      "id" : 4,
+      "name" : "fare_amount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 5,
+      "name" : "store_and_fwd_flag",
+      "required" : false,
+      "type" : "string"
+    } ]
+  },
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "vendor_id",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 2,
+      "name" : "trip_id",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 3,
+      "name" : "trip_distance",
+      "required" : false,
+      "type" : "float"
+    }, {
+      "id" : 4,
+      "name" : "fare_amount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 5,
+      "name" : "store_and_fwd_flag",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "partition-spec" : [ {
+    "name" : "vendor_id",
+    "transform" : "identity",
+    "source-id" : 1,
+    "field-id" : 1000
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ {
+      "name" : "vendor_id",
+      "transform" : "identity",
+      "source-id" : 1,
+      "field-id" : 1000
+    } ]
+  } ],
+  "last-partition-id" : 1000,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "root"
+  },
+  "current-snapshot-id" : 459049594690759934,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 459049594690759934,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "snapshot-id" : 459049594690759934,
+    "timestamp-ms" : 1666516962087,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1666516938907",
+      "added-data-files" : "4",
+      "added-records" : "4",
+      "added-files-size" : "6001",
+      "changed-partition-count" : "2",
+      "total-records" : "4",
+      "total-files-size" : "6001",
+      "total-data-files" : "4",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/nyc/taxis/metadata/snap-459049594690759934-1-c02525ab-9c3b-458d-9c58-30d67ddf0b31.avro",
+    "schema-id" : 0
+  } ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1666516962087,
+    "snapshot-id" : 459049594690759934
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1666516947733,
+    "metadata-file" : "/home/iceberg/warehouse/nyc/taxis/metadata/00000-fba34454-d868-4a6b-b51a-4f8a20feeb47.metadata.json"
+  } ]
+}
